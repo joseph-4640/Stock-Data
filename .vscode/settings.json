@@ -1,0 +1,27 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "sunday",
+            "group": "Hellena",
+            "database": "mysql",
+            "username": "sun@254",
+            "connectionTimeout": 300
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Joseph",
+            "group": "Hellen",
+            "database": "/home/denis/Stock-Data/sqlite.db", 
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
