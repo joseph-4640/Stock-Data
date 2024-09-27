@@ -1,5 +1,6 @@
 import pandas as pd
 import requests
+import sqlite3
 
 class AlphaVantageAPI:
     """AlphaVantage API class for extracting stock data."""
@@ -61,3 +62,7 @@ class AlphaVantageAPI:
         stock_data.columns = [c.split(".")[1] for c in stock_data.columns]
         
         return stock_data
+    
+    
+    
+    
