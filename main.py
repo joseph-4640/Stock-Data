@@ -31,3 +31,16 @@ class FitIn(BaseModel):
 class FitOut(FitIn):
     success: bool
     message: str
+
+
+def build_model(ticker, use_new_data):
+    # Connect to database
+    connection = sqlite3.connect("/home/denis/Stock-Data/sqlite.db", check_same_thread=False)
+
+    # Create an isnstace of the SQLRepository class
+    repo = SQLRepository(connection=connection)
+    
+    # Create Model
+    model = GarchModel(ticker=ticker, use_new_data=True, repo=repo)
+    
+    return model
