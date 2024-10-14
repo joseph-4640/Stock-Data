@@ -30,10 +30,17 @@ class FitIn(BaseModel):
 
 # FitOut Class
 class FitOut(FitIn):
+<<<<<<< HEAD
     success:bool
     message:str
 
 # Build Model Function
+=======
+    success: bool
+    message: str
+
+
+>>>>>>> e4540dd76bad35e6ce6aca067df706cc7408ed9e
 def build_model(ticker, use_new_data):
     # Connect to database
     connection = sqlite3.connect("/home/denis/Stock-Data/sqlite.db", check_same_thread=False)
@@ -42,6 +49,7 @@ def build_model(ticker, use_new_data):
     repo = SQLRepository(connection=connection)
     
     # Create Model
+<<<<<<< HEAD
     model = GarchModel(ticker="BABA", use_new_data=use_new_data, repo=repo)
     
     return model
@@ -148,3 +156,8 @@ def get_prediction(request: PredictIn):
         # Add 'message' key to response
         response["message"] = "Error occured while processing the prediction stage"
 
+=======
+    model = GarchModel(ticker=ticker, use_new_data=True, repo=repo)
+    
+    return model
+>>>>>>> e4540dd76bad35e6ce6aca067df706cc7408ed9e
