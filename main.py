@@ -156,8 +156,3 @@ def get_prediction(request: PredictIn):
         # Add 'message' key to response
         response["message"] = "Error occured while processing the prediction stage"
 
-=======
-    model = GarchModel(ticker=ticker, use_new_data=True, repo=repo)
-    
-    return model
->>>>>>> e4540dd76bad35e6ce6aca067df706cc7408ed9e
