@@ -21,26 +21,19 @@ def hello():
 # FitIn Class
 
 class FitIn(BaseModel):
-    ticker:str
-    use_new_data:bool
-    n_observations:int
-    p:int
-    q:int
+    ticker: str
+    use_new_data: bool
+    n_observations: int
+    p: int
+    q: int
 
 
 # FitOut Class
 class FitOut(FitIn):
-<<<<<<< HEAD
-    success:bool
-    message:str
-
-# Build Model Function
-=======
     success: bool
     message: str
 
-
->>>>>>> e4540dd76bad35e6ce6aca067df706cc7408ed9e
+# Build Model Function
 def build_model(ticker, use_new_data):
     # Connect to database
     connection = sqlite3.connect("/home/denis/Stock-Data/sqlite.db", check_same_thread=False)
@@ -49,7 +42,6 @@ def build_model(ticker, use_new_data):
     repo = SQLRepository(connection=connection)
     
     # Create Model
-<<<<<<< HEAD
     model = GarchModel(ticker="BABA", use_new_data=use_new_data, repo=repo)
     
     return model

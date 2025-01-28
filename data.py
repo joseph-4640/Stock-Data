@@ -15,7 +15,7 @@ class AlphaVantageAPI:
         ticker: str
             The ticker symbol of the equity.
         output_size: str
-            Number of observations to return. "full" means the historic observations of the equtiy to be returned, "compact means the most recent observations."
+            Number of observations to return. "full" means the historic observations of the equity to be returned, "compact means the most recent observations."
         returns
         _ _ _ _ _ _
         pd.DataFrame:
