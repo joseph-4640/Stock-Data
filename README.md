@@ -44,7 +44,7 @@ Make sure you have the following packages installed:
 4. **main.py**: 
    - This script contains the backend code for the FastAPI application. It sets up the web server and defines the API endpoints for interacting with the stock data.
 
-5. **module.py**: 
+5. **model.py**: 
    - Implements the GARCH model class, which is used for time series forecasting and volatility modeling.
 
 6. **deploy.ipynb**: 
