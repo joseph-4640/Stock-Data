@@ -1,5 +1,5 @@
 
-# Stock Data Project
+# PREDICTING STOCK VOLATILITY S/P 500
 
 This project is designed to interact with the Alpha Vantage API, test various functionalities, and deploy machine learning models using FastAPI. It comprises several Jupyter notebooks and Python scripts to facilitate API access, testing, and deployment of a GARCH model.
 
